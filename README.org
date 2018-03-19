@@ -1,2 +1,5 @@
 #+TITLE: Kitty-spec
 [[https://copr.fedorainfracloud.org/coprs/gagbo/kitty-latest/package/kitty/status_image/last_build.png]]
+
+The first spec file is imported from oleastre/kitty copr. Thanks for his work
+that allows me to start with a base
