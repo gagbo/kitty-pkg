@@ -2,12 +2,11 @@
 
 %global __python %{__python3}
 %global git_rev  v%{git_tag}
-%global git_date %(date +%%y%%m%%d)
 %global checkout %{git_date}git%(c=%{git_rev}; echo ${c:0:7})
 
 Name:           kitty
 Version:        %{git_tag}
-Release:        1.%{git_date}%{?dist}
+Release:        1.%{?dist}
 Summary:        A modern, hackable, featureful, OpenGL-based terminal emulator
 
 License:        GPLv3
@@ -20,6 +19,8 @@ BuildRequires: libpng freetype fontconfig libXcursor-devel pkg-config
 BuildRequires: libXrandr-devel libXinerama-devel libxkbcommon-x11-devel
 BuildRequires: mesa-libGL-devel libXi-devel
 # Add (gcc | clang) in the BuildRequires
+
+Requires: harfbuzz libpng freetype fontconfig
 
 %description
 kitty - A terminal emulator
