@@ -2,7 +2,7 @@
 
 %global __python %{__python3}
 %global git_rev  v%{git_tag}
-%global git_date 20180314
+%global git_date %(date +%%y%%m%%d)
 %global checkout %{git_date}git%(c=%{git_rev}; echo ${c:0:7})
 
 Name:           kitty
