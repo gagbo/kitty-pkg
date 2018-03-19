@@ -1,1 +1,2 @@
 #+TITLE: Kitty-spec
+[[https://copr.fedorainfracloud.org/coprs/gagbo/kitty-latest/package/kitty/status_image/last_build.png]]
