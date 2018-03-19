@@ -6,7 +6,7 @@
 
 Name:           kitty
 Version:        %{git_tag}
-Release:        1.%{?dist}
+Release:        1%{?dist}
 Summary:        A modern, hackable, featureful, OpenGL-based terminal emulator
 
 License:        GPLv3
