@@ -14,7 +14,7 @@ URL:            https://github.com/kovidgoyal/kitty
 Source0:        https://github.com/kovidgoyal/%{name}/archive/%{git_rev}.tar.gz
 BuildArch:      x86_64
 
-BuildRequires: python3-devel >= 3.5.0 harfbuzz >= 1.5.0 zlib
+BuildRequires: python3-devel >= 3.5.0 harfbuzz-devel >= 1.5.0 zlib
 BuildRequires: libpng freetype fontconfig libXcursor-devel pkg-config
 BuildRequires: libXrandr-devel libXinerama-devel libxkbcommon-x11-devel
 BuildRequires: mesa-libGL-devel libXi-devel
