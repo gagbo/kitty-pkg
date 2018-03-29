@@ -1,4 +1,5 @@
 %define git_tag 0.8.3
+%define version_string 0.8.3
 
 %global __python %{__python3}
 # %global git_rev  v%{git_tag}
@@ -6,7 +7,7 @@
 %global checkout %{git_date}git%(c=%{git_rev}; echo ${c:0:7})
 
 Name:           kitty
-Version:        %{git_tag}
+Version:        %{version_string}
 Release:        3%{?dist}
 Summary:        A modern, hackable, featureful, OpenGL-based terminal emulator
 
@@ -47,7 +48,7 @@ kitty - A terminal emulator
 
 
 %prep
-%setup -q -n %{name}-%{git_tag}
+%setup -q -n %{name}-%{git_rev}
 
 
 %build
