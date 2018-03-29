@@ -1,9 +1,8 @@
-%define git_tag 0.8.3
 %define version_string 0.8.3
 
 %global __python %{__python3}
-# %global git_rev  v%{git_tag}
-%global git_rev  94d248d
+%global git_rev  v%{version_string}
+%global git_rev  master
 %global checkout %{git_date}git%(c=%{git_rev}; echo ${c:0:7})
 
 Name:           kitty
