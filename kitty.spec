@@ -1,12 +1,13 @@
 %define git_tag 0.8.3
 
 %global __python %{__python3}
-%global git_rev  v%{git_tag}
+# %global git_rev  v%{git_tag}
+%global git_rev  94d248d
 %global checkout %{git_date}git%(c=%{git_rev}; echo ${c:0:7})
 
 Name:           kitty
 Version:        %{git_tag}
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A modern, hackable, featureful, OpenGL-based terminal emulator
 
 License:        GPLv3
@@ -72,6 +73,9 @@ cp -r linux-package/* %{buildroot}/usr
 %license LICENSE
 
 %changelog
+* Thu Mar 29 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.8.3-3
+- Include commit 94d248d that fixes startup issue (see issue #421 upstream)
+
 * Thu Mar 29 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.8.3-2
 - Upgrade to release 0.8.3
 
