@@ -50,7 +50,7 @@ kitty - A terminal emulator
 
 
 %build
-python3 setup.py linux-package --debug --libdir-name %{_lib}
+python3 setup.py --verbose linux-package --debug --libdir-name %{_lib}
 
 
 %install
@@ -68,7 +68,7 @@ cp -r linux-package/* %{buildroot}/usr
 %{_datadir}/applications/kitty.desktop
 %{_datadir}/terminfo/x/xterm-kitty
 %{_datadir}/icons/hicolor/256x256/apps/kitty.png
-
+%doc CHANGELOG.rst README.asciidoc
 %license LICENSE
 
 %changelog
