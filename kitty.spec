@@ -1,4 +1,4 @@
-%define version_string 0.9.1
+%define version_string 0.10.0
 
 %global __python %{__python3}
 %global git_rev  v%{version_string}
@@ -72,6 +72,9 @@ cp -r linux-package/* %{buildroot}/usr
 %license LICENSE
 
 %changelog
+* Tue May 22 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.10.0-1
+- Upgrade to release 0.10.0
+
 * Fri May 11 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.9.1-1
 - Upgrade to release 0.9.1
 
