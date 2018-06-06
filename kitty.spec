@@ -6,13 +6,13 @@
 
 Name:           kitty
 Version:        %{version_string}
-Release:        1%{?dist}
-Summary:        A modern, hackable, featureful, OpenGL-based terminal emulator
+Release:        2%{?dist}
+Summary:        A modern, hack-able, feature full, OpenGL-based terminal emulator
 
 License:        GPLv3
 URL:            https://github.com/kovidgoyal/kitty
 Source0:        https://github.com/kovidgoyal/%{name}/archive/%{git_rev}.tar.gz
-BuildArch:      x86_64
+ExclusiveArch:      x86_64
 
 BuildRequires: python3-devel >= 3.5.0 harfbuzz-devel >= 1.5.0 zlib pkg-config
 BuildRequires: libpng-devel freetype-devel fontconfig-devel libXcursor-devel
@@ -25,8 +25,9 @@ Requires: harfbuzz libpng freetype fontconfig
 %description
 kitty - A terminal emulator
 * Uses OpenGL for rendering, offloads rendering to the GPU for lower system
-  load and buttery smooth scrolling. Uses threaded rendering to minimize input latency.
-* Supports all modern terminal features: graphics (images), unicode,
+  load and buttery smooth scrolling. Uses threaded rendering
+  to minimize input latency.
+* Supports all modern terminal features: graphics (images), Unicode,
   true-color, OpenType ligatures, mouse protocol, focus tracking, bracketed
   paste and so on.
 * Supports tiling multiple terminal windows side by side in different layouts
@@ -37,10 +38,10 @@ kitty - A terminal emulator
   input and URL hints.
 * Supports startup sessions which allow you to specify the window/tab
   layout, working directories and programs to run on startup.
-* Cross-platform support: kitty currently works on Linux and macOS, but
+* Cross-platform support: kitty currently works on Linux and mac OS, but
   because it uses only OpenGL for rendering, it should be trivial to port
   to other platforms.
-* Allows you to open the scrollback buffer in a separate window using
+* Allows you to open the scroll-back buffer in a separate window using
   arbitrary programs of your choice. This is useful for browsing the
   history comfortably in a pager or editor.
 
@@ -72,6 +73,9 @@ cp -r linux-package/* %{buildroot}/usr
 %license LICENSE
 
 %changelog
+* Wed Jun 6 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.10.1-1
+- Lint the rpm and specify ExclusiveArch
+
 * Fri May 25 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.10.1-1
 - Upgrade to release 0.10.1
 
