@@ -1,5 +1,4 @@
 #+TITLE: Spec file to package kitty in copr
-[[https://copr.fedorainfracloud.org/coprs/gagbo/kitty-latest/package/kitty/status_image/last_build.png]]
 
-The first spec file is imported from oleastre/kitty copr. Thanks for his work
-that allows me to start with a base.
+* Deprecated
+This repo is archived, as all the commits are now pushed [[https://framagit.org/gagbo/kitty-pkg/][there]]
